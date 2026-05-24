@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: moviebooking-config
+  namespace: moviebooking-prod
+data:
+SPRING_DATASOURCE_URL: "jdbc:mysql://mysql-service:3306/movie_db"
+SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
+SPRING_JPA_SHOW_SQL: "false"
+SPRING_JPA_DATABASE_PLATFORM: "org.hibernate.dialect.MySQL8Dialect"
+SERVER_PORT: "8080"

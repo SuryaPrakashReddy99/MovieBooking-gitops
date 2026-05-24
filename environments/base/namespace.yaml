@@ -1,0 +1,7 @@
+apiVersion: V1
+kind: Namespace
+metadata:
+  name: moviebooking-prod
+  labels:
+    app: moviebooking
+    env: prod
