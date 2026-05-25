@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: moviebooking
-  namespace: moviebooking-prod
+  # REMOVE namespace line from base — overlays set it
 spec:
   replicas: 2
   selector:
