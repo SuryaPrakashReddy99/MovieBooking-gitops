@@ -2,6 +2,5 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: moviebooking
-  namespace: moviebooking-dev
 spec:
   replicas: 1
